@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Unit Converter
+        </title>
+        <link rel="stylesheet" href="unitconverter.css">
+    </head>
+    <body>
+        <h2 id="heading1">Unit Converter</h2>
+       <div class="container7">
+        <div class="container8">
+        <div class="container9">
+        <button onclick="temperature()">Temperature</button>
+        <button onclick="length()">Length</button>
+        <button onclick="currency()">Currency</button>
+        </div>
+        <div class="container10">
+        <button onclick="area()">Area</button>
+        <button onclick="volume()">Volume</button>
+        </div>
+        <div class="container11">
+        <button onclick="weight()">Weight</button>
+        </div>
+        </div>
+        <img id="number1img" src="number1.gif"/>
+        </div>
+
+        <img src="swipe2.gif" id="swipeimg"/>
+        
+        <div class="container1">
+            <table border="1" width="70%" height="400px" align="center"  style="background-color: rgba(125, 228, 228, 0.5);
+            color: #fff;">
+                 <th>
+                    <h1>Temperature Converter</h1>
+            <span>
+            <label for="inputnumber" style="color:black">Enter your input:</label>
+            <input type="number" id="inputnumber">
+            </span>
+            <span>
+                <select id="degrees">
+                    <option value="">Choose the degree...</option>
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </span>
+            <br />
+            <br />
+            <span>
+                <label for="displayvalue" style="color:black">Your Answer:</label>
+                <input type="number" id="displayvalue">
+            </span>
+                <span>
+                    <select id="degrees1">
+                        <option value="">Choose the degree to be converted into...</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </span>
+                <br />
+                <br />
+                <button onclick="temp1()" align="center">Submit</button>
+                <br />
+                <br />
+                <button onclick="clearfunction()" align="center">Clear</button>
+            </th>
+            </table>
+            </div>
+    
+    
+            <div class="container2">
+                <table border="1" width="70%" height="400px" align="center"  style="background-color:rgba(125, 228, 228, 0.5);
+                color: #fff;">
+                     <th>
+                        <h1>Length Converter</h1>
+                        <span>
+                            <label for="inputnumber1" style="color:black">Enter your input:</label>
+                            <input type="number1" id="inputnumber1">
+                            </span>
+                            <span>
+                                <select id="length">
+                                    <option value="">Choose the length...</option>
+                                    <option value="kilometer">Kilo Meter</option>
+                                    <option value="hectameter">Hecta Meter</option>
+                                    <option value="decameter">Deca Meter</option>
+                                    <option value="meter">Meter</option>
+                                    <option value="decimeter">Deci Meter</option>
+                                    <option value="centimeter">Centi Meter</option>
+                                    <option value="millimeter">Milli Meter</option>
+                                </select>
+                            </span>
+                            <br />
+                            <br />
+                            <span>
+                                <label for="displayvalue1" style="color:black">Your Answer:</label>
+                                <input type="number" id="displayvalue1">
+                            </span>
+                                <span>
+                                    <select id="length1">
+                                        <option value="">Choose the length to be converted into...</option>
+                                        <option value="kilometer">Kilo Meter</option>
+                                        <option value="hectameter">Hecta Meter</option>
+                                        <option value="decameter">Deca Meter</option>
+                                        <option value="meter">Meter</option>
+                                        <option value="decimeter">Deci Meter</option>
+                                        <option value="centimeter">Centi Meter</option>
+                                        <option value="millimeter">Milli Meter</option>
+                                    </select>
+                                </span>
+                                <br />
+                                <br />
+                            <button onclick="lengths1()" align="center">Submit</button>
+                            <br />
+                            <br />
+                           <button onclick="clearfunction()" align="center">Clear</button>
+                            </th>
+                </table>
+            </div>
+    
+    
+            <div class="container3">
+                <table border="1" width="70%" height="400px" align="center"  style="background-color:rgba(125, 228, 228, 0.5);
+                color: #fff;">
+                     <th>
+                        <h1>Weight Converter</h1>
+                        <span>
+                            <label for="inputnumber2" style="color:black">Enter your input:</label>
+                            <input type="number1" id="inputnumber2">
+                            </span>
+                            <span>
+                                <select id="weight">
+                                    <option value="">Choose the weight...</option>
+                                    <option value="kilogram">Kilo Gram</option>
+                                    <option value="hectagram">Hecta Gram</option>
+                                    <option value="decagram">Deca Gram</option>
+                                    <option value="gram">Gram</option>
+                                    <option value="decigram">Deci Gram</option>
+                                    <option value="centigram">Centi Gram</option>
+                                    <option value="milligram">Milli Gram</option>
+                                </select>
+                            </span>
+                            <br />
+                            <br />
+                            <span>
+                                <label for="displayvalue2" style="color:black">Your Answer:</label>
+                                <input type="number" id="displayvalue2">
+                            </span>
+                                <span>
+                                    <select id="weight1">
+                                        <option value="">Choose the length to be converted into...</option>
+                                        <option value="kilogram">Kilo Gram</option>
+                                        <option value="hectagram">Hecta Gram</option>
+                                        <option value="decagram">Deca Gram</option>
+                                        <option value="gram">Gram</option>
+                                        <option value="decigram">Deci Gram</option>
+                                        <option value="centigram">Centi Gram</option>
+                                        <option value="milligram">Milli Gram</option>
+                                    </select>
+                                </span>
+                                <br />
+                                <br />
+                            <button onclick="weights1()" align="center">Submit</button>
+                            <br />
+                            <br />
+                            <button onclick="clearfunction()" align="center">Clear</button>
+                            </th>
+                </table>
+            </div>
+    
+    
+        <div class="container4">
+            <table border="1" width="70%" height="400px" align="center"  style="background-color: rgba(125, 228, 228, 0.5);
+            color: #fff;">
+                 <th>
+                    <h1>Area Converter</h1>
+            <span>
+            <label for="inputnumber3" style="color:black">Enter your input:</label>
+            <input type="number" id="inputnumber3">
+            </span>
+            <span>
+                <select id="area">
+                    <option value="">Choose the measurement...</option>
+                    <option value="centimetersq">Centimeter Sqaure</option>
+                    <option value="metersq">Meter Square</option>
+                </select>
+            </span>
+            <br />
+            <br />
+            <span>
+                <label for="displayvalue3" style="color:black">Your Answer:</label>
+                <input type="number" id="displayvalue3">
+            </span>
+                <span>
+                    <select id="area1">
+                        <option value="">Choose the measurement to be converted into...</option>
+                        <option value="centimetersq">Centimeter Sqaure</option>
+                        <option value="metersq">Meter Square</option>
+                    </select>
+                </span>
+                <br />
+                <br />
+            <button onclick="areas1()" align="center">Submit</button>
+            <br />
+            <br />
+            <button onclick="clearfunction()" align="center">Clear</button>
+            </th>
+            </table>
+     </div>
+    
+    
+     <div class="container5">
+        <table border="1" width="70%" height="400px" align="center"  style="background-color:rgba(125, 228, 228, 0.5);
+        color: #fff;">
+             <th>
+                <h1>Volume Converter</h1>
+        <span>
+        <label for="inputnumber4" style="color:black">Enter your input:</label>
+        <input type="number" id="inputnumber4">
+        </span>
+        <span>
+            <select id="volume">
+                <option value="">Choose the measurement...</option>
+                <option value="centimetercube">Centimeter Cube</option>
+                <option value="metercube">Meter Cube</option>
+            </select>
+        </span>
+        <br />
+        <br />
+        <span>
+            <label for="displayvalue4" style="color:black">Your Answer:</label>
+            <input type="number" id="displayvalue4">
+        </span>
+            <span>
+                <select id="volume1">
+                    <option value="">Choose the measurement to be converted into...</option>
+                    <option value="centimetercube">Centimeter Cube</option>
+                    <option value="metercube">Meter Cube</option>
+                </select>
+            </span>
+            <br />
+            <br />
+        <button onclick="volumes1()" align="center">Submit</button>
+        <br />
+        <br />
+        <button onclick="clearfunction()" align="center">Clear</button>
+        </th>
+        </table>
+    </div>
+    
+    
+    
+    <div class="container6">
+        <table border="1" width="70%" height="400px" align="center"  style="background-color: rgba(125, 228, 228, 0.5);
+        color: #fff;">
+             <th>
+                <h1>Currency Converter</h1>
+        <span>
+        <label for="inputnumber5" style="color:black">Enter your input:</label>
+        <input type="number" id="inputnumber5">
+        </span>
+        <span>
+            <select id="currency">
+                <option value="">Choose the currency...</option>
+                <option value="usd">USD</option>
+                <option value="inr">INR</option>
+            </select>
+        </span>
+        <br />
+        <br />
+        <span>
+            <label for="displayvalue5" style="color:black">Your Answer:</label>
+            <input type="number" id="displayvalue5">
+        </span>
+            <span>
+                <select id="currency1">
+                    <option value="">Choose the currency to be converted into...</option>
+                    <option value="usd">USD</option>
+                    <option value="inr">INR</option>
+                </select>
+            </span>
+            <br />
+            <br />
+        <button onclick="currencies1()" align="center">Submit</button>
+        <br />
+        <br />
+        <button onclick="clearfunction()" align="center">Clear</button>
+        </th>
+        </table>
+    </div>
+    <script src="unitconverter.js"></script>
+    </body>
+    </html>
